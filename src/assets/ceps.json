@@ -1,0 +1,75 @@
+[
+  {
+    "cep": "01001-000",
+    "logradouro": "Praça da Sé",
+    "complemento": "lado ímpar",
+    "bairro": "Sé",
+    "localidade": "São Paulo",
+    "uf": "SP",
+    "ibge": "3550308",
+    "gia": "1004",
+    "ddd": "11",
+    "siafi": "7107"
+  },
+  {
+    "cep": "90420020",
+    "logradouro": "Rua Professor Álvaro Alvim",
+    "complemento": "",
+    "bairro": "Rio Branco",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91530080",
+    "logradouro": "Rua Oswaldo Pereira de Freitas",
+    "complemento": "",
+    "bairro": "Partenon",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "90050100",
+    "logradouro": "Rua General Lima e Silva",
+    "complemento": "até 868 - lado par",
+    "bairro": "Centro Histórico",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91530034",
+    "logradouro": "Rua Professor Cristiano Fischer",
+    "complemento": "de 1900 ao fim - lado par",
+    "bairro": "Partenon",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91530010",
+    "logradouro": "Rua Albion",
+    "complemento": "",
+    "bairro": "Partenon",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  }
+]
+]
