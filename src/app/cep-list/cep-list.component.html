@@ -1,3 +1,24 @@
-<h2>Todos os Ceps</h2>
+<h3>Todos os Ceps</h3>
 
-<p>cep-list works!</p>
+<div class="cep-item" >
+  <table  id = "cep-table" striped="true">
+    <thead>
+      <tr>
+        <th data-th="Logradouro/Nome">Logradouro/Nome</th>
+        <th data-th="Bairro/Distrito">Bairro/Distrito</th>
+        <th data-th="Complemento">Complemento</th>
+        <th data-th="Localidade/UF">Localidade/UF</th>
+        <th data-th="CEP">CEP</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let cep of ceps | async">
+      <tr>
+         <td>{{ cep.logradouro }}</td>
+         <td>{{ cep.bairro }}</td>
+         <td>{{ cep.complemento }}</td>
+         <td>{{ cep.localidade }} / {{ cep.uf }}</td>
+         <td>{{ cep.cep }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
