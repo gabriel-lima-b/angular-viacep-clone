@@ -1,1 +1,27 @@
-<p>cep-details works!</p>
+<h3>CEP</h3>
+
+<div class="cep-item" >
+    <table  id = "cep-table" striped="true">
+      <thead>
+        <tr>
+          <th data-th="Logradouro/Nome">Logradouro/Nome</th>
+          <th data-th="Bairro/Distrito">Bairro/Distrito</th>
+          <th data-th="Complemento">Complemento</th>
+          <th data-th="Localidade/UF">Localidade/UF</th>
+          <th data-th="CEP">CEP</th>
+        </tr>
+      </thead>
+      <tbody *ngFor = 'let cep from cep | async'>
+        <tr>
+           <td>{{ cep.logradouro }}</td>
+           <td>{{ cep.bairro }}</td>
+           <td>{{ cep.complemento }}</td>
+           <td>{{ cep.localidade }} / {{ cep.uf }}</td>
+           <td>{{ cep.cep }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <p></p>
+    <a routerLink="" class="button"> Nova Consulta</a>
+  
+  </div>

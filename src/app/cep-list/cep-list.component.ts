@@ -7,7 +7,10 @@ import { CepService } from '../cep.service';
 })
 export class CepListComponent implements OnInit {
   ceps = this.cepService.getCeps();
-  constructor(private cepService: CepService) {}
+ 
+  constructor(
+    private cepService: CepService
+    ) {}
 
   ngOnInit() {}
 }

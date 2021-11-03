@@ -1,8 +1,8 @@
 <h3>Informe o CEP:</h3>
-<form (ngSubmit)="onSubmit()">
+<form [formGroup]="cepForm" (ngSubmit)="onSubmit()">
   <div>
     <label for="cep">Cep</label>
-    <input id="cep" type="text" />
+    <input id="cep" type="text" formControlName = "cep" required/>
   </div>
   <button class="button" type="submit">Consultar CEP</button>
 </form>

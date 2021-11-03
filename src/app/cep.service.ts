@@ -6,7 +6,7 @@ import { Cep } from './cep.js';
 })
 export class CepService {
   cepsList: Cep[] = [];
-
+  apiURL : string = 'http://localhost:8080';
   constructor(private http: HttpClient) {}
 
   addToCepsList(cep: Cep) {
@@ -32,6 +32,18 @@ export class CepService {
         localidade: string;
         uf: string;
       }[]
-    >('assets/ceps.json');
+    >(`${ this.apiURL }/all`);
+  }
+
+  getCepbyCep(icep: string) {
+    return this.http.get<
+      {
+        cep: string;
+        logradouro: string;
+        complemento: string;
+        bairro: string;
+        localidade: string;
+        uf: string;
+      }>(`${this.apiURL}/${icep}`);
   }
 }

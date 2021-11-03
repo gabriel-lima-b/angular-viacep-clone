@@ -25,6 +25,7 @@ import { CepDetailsComponent } from './cep-details/cep-details.component';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'all', component: CepListComponent },
       { path: 'shipping', component: ShippingComponent },
+      {path: 'details/:cep', component: CepDetailsComponent},
     ]),
   ],
   declarations: [
