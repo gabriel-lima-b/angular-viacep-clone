@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class CepFinderComponent implements OnInit {
   
+  cepString = '';
   constructor(
     private formBuilder: FormBuilder,
     private router: Router
@@ -20,8 +21,11 @@ export class CepFinderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   onSubmit(): void{
-    this.router.navigateByUrl(`/details/${this.cepForm.value}`); 
+    this.cepString = this.cepForm.value.cep;
+    this.router.navigateByUrl(`details/${this.cepString}`);
+
   }
 
 }

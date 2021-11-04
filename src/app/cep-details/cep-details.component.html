@@ -1,7 +1,13 @@
-<h3>CEP</h3>
+<div *ngIf="error">
+  <h3>Consulta inválida.</h3>
+  <a routerLink="" class="button"> Nova Consulta</a>
+</div>
 
-<div class="cep-item" >
-    <table  id = "cep-table" striped="true">
+<div *ngIf="cepDetail">
+  <h3>CEP:</h3>
+
+  <div class="cep-item">
+    <table id="cep-table" striped="true">
       <thead>
         <tr>
           <th data-th="Logradouro/Nome">Logradouro/Nome</th>
@@ -11,17 +17,17 @@
           <th data-th="CEP">CEP</th>
         </tr>
       </thead>
-      <tbody *ngFor = 'let cep from cep | async'>
+      <tbody>
         <tr>
-           <td>{{ cep.logradouro }}</td>
-           <td>{{ cep.bairro }}</td>
-           <td>{{ cep.complemento }}</td>
-           <td>{{ cep.localidade }} / {{ cep.uf }}</td>
-           <td>{{ cep.cep }}</td>
+          <td>{{ cepDetail.logradouro }}</td>
+          <td>{{ cepDetail.bairro }}</td>
+          <td>{{ cepDetail.complemento }}</td>
+          <td>{{ cepDetail.localidade }} / {{ cepDetail.uf }}</td>
+          <td>{{ cepDetail.cep }}</td>
         </tr>
       </tbody>
     </table>
     <p></p>
     <a routerLink="" class="button"> Nova Consulta</a>
-  
-  </div>
+</div>
+</div>
