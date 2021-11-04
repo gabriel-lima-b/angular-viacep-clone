@@ -1,8 +1,5 @@
 # AngularViacepClone
 
-This program was created as an API consumer for my [via-cep-clone using Java Spring](https://github.com/gabriel-lima-b/spring-viacep-clone)
-You need to first run the Spring server at localhost:8080 for this application to run.
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
 ## Development server
