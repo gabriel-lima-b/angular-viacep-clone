@@ -1,8 +1,8 @@
 /* Global Styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Space+Mono&display=swap");
 * {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   color: #616161;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +18,7 @@ body {
   flex-direction: row;
 }
 
-router-outlet + *  {
+router-outlet + * {
   padding: 0 16px;
 }
 
@@ -32,7 +32,8 @@ h2 {
   font-size: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: lighter;
 }
 
@@ -59,7 +60,7 @@ input {
   border-radius: 2px;
   padding: 8px;
   margin-bottom: 16px;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
 }
 
 label {
@@ -71,7 +72,8 @@ label {
 }
 
 /* Button */
-.button, button {
+.button,
+button {
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
@@ -83,12 +85,14 @@ label {
   border: none;
 }
 
-.button:hover, button:hover {
+.button:hover,
+button:hover {
   opacity: 0.8;
   font-weight: normal;
 }
 
-.button:disabled, button:disabled {
+.button:disabled,
+button:disabled {
   opacity: 0.5;
   cursor: auto;
 }
@@ -111,7 +115,7 @@ app-top-bar {
   width: 100%;
   height: 135px;
   background-color: #008000;
-  border-bottom: #ECEC0E solid 5px;
+  border-bottom: #ecec0e solid 5px;
   padding: 16px;
   display: flex;
   flex-direction: row;
@@ -121,20 +125,21 @@ app-top-bar {
 
 app-top-bar h1 {
   color: white;
-  font-family: 'Roboto slab';
+  font-family: "Roboto slab";
   margin: 0;
 }
 
 app-top-bar h2 {
   color: white;
-  font-family: 'Roboto slab';
+  font-family: "Roboto slab";
   font-size: medium;
   margin: 0 auto;
   text-align: center;
 }
 /* Checkout Cart, Shipping Prices */
 
-.cart-item, .shipping-item {
+.cart-item,
+.shipping-item {
   width: 100%;
   min-width: 400px;
   max-width: 450px;
@@ -144,9 +149,36 @@ app-top-bar h2 {
   padding: 16px 32px;
   margin-bottom: 8px;
   border-radius: 2px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #008000;
+  border-left: 0.8em solid transparent;
+  border-top: 0.8em solid transparent;
+  color: white;
+  padding: 5px;
+}
+
+th:first-child {
+  border-radius: 5px 0px 0px 0px;
+}
+
+th:last-child{
+  border-radius: 0px 5px 0px 0px;
+}
+td {
+  border-left: 1em solid transparent;
+  border-top: 1em solid transparent;
+  font-size: medium;
+  padding: 5px;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

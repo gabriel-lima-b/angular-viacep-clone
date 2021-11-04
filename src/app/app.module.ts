@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { CepFinderComponent } from './cep-finder/cep-finder.component';
 import { CepListComponent } from './cep-list/cep-list.component';
 import { CepDetailsComponent } from './cep-details/cep-details.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { CepDetailsComponent } from './cep-details/cep-details.component';
     CepFinderComponent,
     CepListComponent,
     CepDetailsComponent,
+    FooterComponent,
   ],
   bootstrap: [AppComponent],
 })
